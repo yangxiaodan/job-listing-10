@@ -1,60 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
 
+  	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
 <div class="jumbotron">
-    <h1 class="title">ever youthful
-     <br>
-      ever weeping
-    </h1>
-    <h2 class="slogan">Young can help you find the best jobs, employers and career advice.
-    </h2>
-    <p class="lead"><a class="btn btn-lg btn-info" href="/jobs">马上应征</a></p>
+    <h4 class="slogan">You deserve a career you love.</h4>
+    <p class="lead"><a class="btn btn-lg btn-info" href="/jobs">Join now</a></p>
 </div>
 
-<div class="box">
-<h3>How Young Works for You</h3>
+
+<div class="member">
+  <h2>Become a Member!</h2>
+  <p>We get it—looking for work is hard work. Let us make it easier for you.
+    <br>Sign up for Monster, then upload your resume so recruiterscan
+    <br>find you and so you can apply for jobs more quickly.
+    <br> Plus you can get job alerts and helpful job content delivered to your inbox.
+      <br>What are you waiting for?</p>
 </div>
 
-      <div class="col_third">
-        <div class="hover panel">
-          <div class="front">
-            <div class="box1">
-              <h2>Search millions of jobs</h2>
-              <p>We've got more than 5 million of 'em—so you've got plenty of options. Plus, we'll send an alert when a good fit for you is posted.</p>
-            </div>
-          </div>
-          <div class="back">
-            <div class="box2">
-              <p>If you're ready for a new challenging job, take a look at our Popular Job Locations and Job Titles. You can also take a look at Company Profiles or different types of careers. </p>
-            </div>
-          </div>
-        </div>
-		</div>
 
-		<div class="col_third">
-        <div class="hover panel">
-          <div class="front">
-            <div class="box1">
-              <h2>Get discovered</h2>
-              <p>Create an account and upload your resume to be found by the recruiters who search Monster's databases every day.</p>
-            </div>
-          </div>
-          <div class="back">
-            <div class="box2">
-              <p>Before you submit another resume, make sure you’re using one of these recruiter-approved fonts.</p>
-            </div>
-          </div>
-        </div>
-		</div>
-
-		<div class="col_third end">
-        <div class="hover panel">
-          <div class="front">
-            <div class="box1">
-              <h2>Be a better candidate</h2>
-              <p>We've got your back. Our career advice, resume services and education partners give you a leg up in the job search.</p>
-          <div class="back">
-            <div class="box2">
-              <p>Target and automatically send custom emails to qualified active and passive candidates, across Monster's talent database.</p>
-            </div>
-          </div>
-        </div>
+<div class="container-fluid text-center">
+  <h2>How Young Works for You</h2>
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://ww2.sinaimg.cn/large/006tNc79gy1ff148jmk3bj31kw11zkjp.jpg" >
+        <p><strong>Search millions of jobs</strong></p>
+        <p>We've got more than 5 million of 'em—so you've
+          <br>got plenty of options. Plus,we'll send an alert
+          <br> when a good fit for you is posted.</p>
       </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://ww2.sinaimg.cn/large/006tNc79gy1ff14a5rwooj31kw11z4r2.jpg" >
+        <p><strong>Get discovered</strong></p>
+        <p>Create an account and upload your resume to
+          <br>be found by the recruiters who search Monster's
+          <br>databases every day.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://ww4.sinaimg.cn/large/006tNc79gy1ff14ajx0ohj31kw11xnpl.jpg" >
+        <p><strong>Be a better candidate</strong></p>
+        <p>We've got your back. Our career advice, resume
+           <br>services and education partners give you a leg
+           <br>up in the job search.</p>
+      </div>
+    </div>
+</div>
+
+
+<h2>What our customers say</h2>
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+	<!-- 轮播（Carousel）指标 -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+	<!-- 轮播（Carousel）项目 -->
+	<div class="carousel-inner" role="listbox">
+		<div class="item active">
+		<h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">guominzheng, BNU University</span></h4>
+		</div>
+		<div class="item">
+			 <h4>"One word... WOW!!"<br><span style="font-style:normal;">Lufy，One Piece</span></h4>
+		</div>
+		<div class="item">
+			<h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actort</span></h4>
+		</div>
+	</div>
+	<!-- 轮播（Carousel）导航 -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+   <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+   <span class="sr-only">Previous</span>
+ </a>
+ <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+   <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+   <span class="sr-only">Next</span>
+ </a>
+</div>
+
+</body>
+</html>
