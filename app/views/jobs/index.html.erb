@@ -9,8 +9,7 @@
         </li>
     </ul>
 </div>
-
-<table class="table table-boldered">
+<!-- <table class="table table-boldered">
     <thead>
         <tr>
             <td>
@@ -43,5 +42,55 @@
         </tr>
         <% end %>
     </tbody>
+</table> -->
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Job</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td><strong>Job</td>
+            <td><strong>Company</td>
+            <td><strong>City</td>
+            <td><strong>Salary</td>
+            <td><strong>Post time</td>
+        </tr>
+
+    </thead>
+    <tbody>
+        <% @jobs.each do |job| %>
+        <tr>
+            <td>
+                <%= link_to(job.title, job_path(job)) %>
+            </td>
+            <td>
+                <%= job.company %>
+            </td>
+            <td>
+                <%= job.city %>
+            </td>
+            <td>
+                <%= job.salary%>
+            </td>
+            <td>
+                <%= job.created_at %>
+            </td>
+        </tr>
+        <% end %>
+    </tbody>
 </table>
+
+</body>
+</html>

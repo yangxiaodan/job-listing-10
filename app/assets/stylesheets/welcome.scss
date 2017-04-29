@@ -5,12 +5,25 @@
 //---------jumbotron---------
 
 p { color: #212121;
+  text-align: center;
 }
 
 h2 { font-size:50px;
-     font-family: Times;
+     font-family: inherit;
      color: #212121;
      padding: 20px 20% 2ex 20%;
+}
+
+h4{
+  display: block;
+  text-align: center;
+  font-size:2px;
+}
+
+.section-title{
+  font-family: 'open_sanslight', sans-serif;
+  font-size:40px;
+  text-align: center;
 }
 
 h3 {font-size:30px;
@@ -23,7 +36,6 @@ h3 {font-size:30px;
   padding-bottom: 110px;
   margin: -20px -40px 20px;
 }
-
 
 .slogan {
   font-family: Times;
@@ -53,7 +65,23 @@ h3 {font-size:30px;
 }
 
 //---------be a member---------
-.member {
+.short-line{
+  display: block;
+  background: #81D4FA;
+  // #35CCC6;
+  border-style: none;
+  border-radius: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  z-index: 53;
+  width: 100px;
+  height: 1.5px;
+  position: relative;
+}
+
+.sec-join {
   font-size:20px;
   padding: 5px 20px 0;
   margin-top: 50px;
@@ -66,15 +94,22 @@ h3 {font-size:30px;
     padding: 0 0 15px 0;
     border: none;
     border-radius: 0;
+    display: inline;
 }
 
 .thumbnail img {
   width: 100%;
   height: 100%;
     margin-bottom: 10px;
+    display: inline;
 }
 
 //--------- slide---------
+.item img {
+  width: 6%;
+  height: 6%;
+}
+
 .carousel-control.right, .carousel-control.left {
     background-image: none;
     color: #f4511e;
@@ -95,4 +130,20 @@ h3 {font-size:30px;
 
 .item span {
     font-style: normal;
+}
+
+.industries > img{
+  width: 3%;
+  height: 3%;
+}
+
+//--------- industries---------
+.sec-industries{
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.second-line{
+  margin-top: 40px;
+
 }

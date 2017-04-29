@@ -9,5 +9,7 @@ Rails.application.routes.draw do
     resources :resumes
   end
 
+  get 'contact' => 'jobs#contact'
+   get 'about' => 'jobs#about'
    root 'welcome#index'
 end
