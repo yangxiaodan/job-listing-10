@@ -61,11 +61,10 @@
 <table class="table table-striped">
     <thead>
         <tr>
-            <td><strong>Job</td>
-            <td><strong>Company</td>
-            <td><strong>City</td>
-            <td><strong>Salary</td>
-            <td><strong>Post time</td>
+            <td><strong>版面</td>
+
+            <td><strong>大鱼币</td>
+            <td><strong>详情</td>
         </tr>
 
     </thead>
@@ -75,17 +74,12 @@
             <td>
                 <%= link_to(job.title, job_path(job)) %>
             </td>
-            <td>
-                <%= job.company %>
-            </td>
-            <td>
-                <%= job.city %>
-            </td>
+
             <td>
                 <%= job.salary%>
             </td>
             <td>
-                <%= job.created_at %>
+                <%= job.description %>
             </td>
         </tr>
         <% end %>

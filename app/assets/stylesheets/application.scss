@@ -68,17 +68,25 @@
     color: #78909C;
 }
 
-//---------Footer---------
+// ---------Footer---------
 
 footer {
     color: #212121;
+    text-align: center;
 }
 
 footer .footer-below {
     padding: 25px 0;
 }
 
+
+
+//---------about us---------
 .sec-working img{
   width: 50%;
   height: 50%;
+}
+
+.left{
+  text-align: left;
 }

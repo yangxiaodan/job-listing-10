@@ -14,6 +14,9 @@ h2 { font-size:50px;
      padding: 20px 20% 2ex 20%;
 }
 
+h3 {font-size:30px;
+}
+
 h4{
   display: block;
   text-align: center;
@@ -22,30 +25,41 @@ h4{
 
 .section-title{
   font-family: 'open_sanslight', sans-serif;
-  font-size:40px;
+  font-size:35px;
   text-align: center;
 }
 
-h3 {font-size:30px;
-}
-
-.jumbotron {
-  background-image:url('http://ww4.sinaimg.cn/large/006tNc79gy1ff1g5f3zfnj31f80rab2a.jpg');
+.intro {
+  background-image:url('http://ww3.sinaimg.cn/large/006tNc79gy1ff5nwqhmksj30zk0npq82.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 110px;
-  margin: -20px -40px 20px;
+  margin: -20px -80px 0px -80px;
+
 }
 
-.slogan {
-  font-family: Times;
-  font-weight:900;
-  font-size:60px;
-  color: #E0E0E0;
-  margin-top: 490px;
-  margin-bottom: 50px;
+.intro-content > h1{
   text-align: center;
-  top: 12px;
+    margin-top: 230px;
+    font-size: 5.5em;
+    text-shadow: 0 0 5px #666;
+    color: #fff;
+  }
+  // font-family: Times;
+  // font-weight:900;
+  // font-size:60px;
+  // color: #f5f5f5;
+  // margin-top: 490px;
+  // margin-bottom: 50px;
+  // text-align: center;
+  // top: 12px;
+
+.intro-content > p{
+  color: #f8f8f8;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 40px;
 }
 
 .lead {
@@ -137,13 +151,17 @@ h3 {font-size:30px;
   height: 3%;
 }
 
-//--------- industries---------
-.sec-industries{
+//--------- species---------
+.sec-species{
   margin-top: 50px;
   margin-bottom: 40px;
 }
 
 .second-line{
   margin-top: 40px;
+}
 
+.sec-species img{
+  width: 60%;
+  height: 60%;
 }

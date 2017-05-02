@@ -11,5 +11,6 @@ Rails.application.routes.draw do
 
   get 'contact' => 'jobs#contact'
    get 'about' => 'jobs#about'
+    get 'fish' => 'jobs#fish'
    root 'welcome#index'
 end

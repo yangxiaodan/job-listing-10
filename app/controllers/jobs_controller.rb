@@ -60,7 +60,7 @@ def edit
 private
 
 def job_params
-  params.require(:job).permit(:title, :description, :company, :city, :salary, :is_hidden)
+  params.require(:job).permit(:title, :description, :city, :salary, :is_hidden)
 end
 
 
