@@ -1,11 +1,11 @@
 <div class="dropdown clearfix pull-right">
     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-      Filter by
+      排序
         <span class="caret"></span>
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
         <li>
-          <%= link_to("post time", jobs_path ) %>
+          <%= link_to("按创建时间", jobs_path ) %>
         </li>
     </ul>
 </div>
@@ -25,6 +25,7 @@
 
 
 <%= render :partial => "jobs/search_bar" %>
+  <section class="jobs-species">
 <table class="table table-striped">
     <thead>
         <tr>
@@ -56,6 +57,16 @@
         <% end %>
     </tbody>
 </table>
+</section>
+
+<footer class="text-center ">
+  <hr>
+    <p class="text-center"><%= link_to '联系我们', contact_path %>-<a href="#s">关于我们</a>-<a href="#s">加入我们</a>-<a href="#s">帮助中心</a>-<a href="#s">意见反馈</a>-<a href="#s">客户端下载</a>
+
+      <br>  Design by xiaodanyang｜Copyright ©大鱼
+
+    </p>
+</footer>
 
 </body>
 </html>
