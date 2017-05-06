@@ -9,41 +9,6 @@
         </li>
     </ul>
 </div>
-<!-- <table class="table table-boldered">
-    <thead>
-        <tr>
-            <td>
-                Job</td>
-            <td>Company</td>
-            <td>City</td>
-            <td>Salary</td>
-            <td>Post time</td>
-        </tr>
-
-    </thead>
-    <tbody>
-        <% @jobs.each do |job| %>
-        <tr>
-            <td>
-                <%= link_to(job.title, job_path(job)) %>
-            </td>
-            <td>
-                <%= job.company %>
-            </td>
-            <td>
-                <%= job.city %>
-            </td>
-            <td>
-                <%= job.salary%>
-            </td>
-            <td>
-                <%= job.created_at %>
-            </td>
-        </tr>
-        <% end %>
-    </tbody>
-</table> -->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -58,9 +23,8 @@
 <body>
 
 
-<div class="container">
 
-  <%= render :partial => "jobs/search_bar" %>
+<%= render :partial => "jobs/search_bar" %>
 <table class="table table-striped">
     <thead>
         <tr>
@@ -68,6 +32,8 @@
 
             <td><strong>大鱼币</td>
             <td><strong>详情</td>
+              <td><strong>创建时间</td>
+                 <td>操作</td>
         </tr>
 
     </thead>
@@ -84,6 +50,8 @@
             <td>
                 <%= job.description %>
             </td>
+            <td><%= job.created_at.to_date %></td>
+             <td><%= link_to("应征", new_job_resume_path(job), class: "btn btn-xs btn-default") %></td>
         </tr>
         <% end %>
     </tbody>
